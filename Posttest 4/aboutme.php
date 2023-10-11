@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sabina Aurelia</title>
+  </head>
+  <body>
+    <header>
+    <input type="checkbox" name="" id="toggler">
+    <div class="title" align = "center"><b>Sabina Aurelia</b></div> 
+        <div class="moon" align = "center">
+            <img src="Photos/darkmode.png" id="icon">
+        </div>
+    </header>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">Holla!</p>
+          <h1 class="title">
+            I'm <span>Sabina Nurlatifah Aurelia </span><br><b>2209106002</b>
+          </h1>
+          <p class="description">
+            I am an informatics student at Mulawarman University, class of 2022 who became interested in the world of informatics, after previously only seeing the Faculty of Medicine
+          </p>
+          <a href="index.php"><div class="action__btns">
+            <button class="button" type="button">Home</button>
+          </div></a>
+          
+        </div>
+        <div class="image">
+          <img src="Photos/aurel.jpg" alt="profile" />
+        </div>
+      </div>
+      <div class="social">
+        <h4 class="title">Socials</h4>
+        <div class="social_items">
+          <a href="https://github.com/SabinaNAurelia" target="_b" class="social_item">
+            <i data-feather="github"></i>
+            <span>SabinaNAurelia</span>
+          </a>
+          <a href="https://x.com/avvchl?s=21&t=PZ8uQ54bvg9wXVSe_KvxcQ" target="_blank" class="social_item">
+            <i data-feather="twitter"></i>
+            <span>avvchla</span>
+          </a>
+          <a href="https://instagram.com/sbnaurelli?igshid=NGVhN2U2NjQ0Yg==" target="_blank" class="social_item">
+            <i data-feather="instagram"></i>
+            <span>sbnaurelli</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    feather.replace()
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "Photos/lightmode.png";
+        }else{
+            icon.src = "Photos/darkmode.png";
+        }
+    }
+</script>
+    </section>
+  </body>
+</html>
