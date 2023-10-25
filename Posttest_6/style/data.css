@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+:root{
+    --primary-color: #ffff;
+    --secondary-color: #212121;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 20px; /* Ukuran font h3 */
+    color: #333; /* Warna teks */
+    background-color: #aaaa; /* Warna latar belakang h3 */
+    padding: 10px; /* Ruang bantalan di sekitar teks */
+    border: 1px solid #ccc; /* Garis bingkai */
+    border-radius: 5px; /* Sudut melengkung pada elemen h3 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan elemen */
+}
+
+table {
+    border: 1px solid #ddeeee;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    margin: 10px auto 10px auto;
+}
+
+table thead th {
+    background-color: #aaaa;
+    border: 1.5px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody td {
+    border: 1.5px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+table tbody a {
+    background-color: #aaaa;
+    color: #ffff;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid;
+    display: flex;
+    align-items: center; 
+    justify-content:center;
+}
+ a {
+    background-color: #aaaa;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid;   
+}
+
+/* tambah data */
+label {
+    margin-top: 10px;
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.base {
+    width: 400px;
+    padding: 20px;
+    font-size: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #aaaa;
+    border: 1px solid #aaaa;
+    outline-color: var(--secondary-color);
+}
+
+button {
+    background-color: #aaaa;
+    color: var(--secondary-color);
+    padding: 10px;
+    font-size: 12px;
+    border: 0;
+    margin-top: 20px
+
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.menu-items li a{
+    color: var(--secondary-color);
+}
