@@ -1,0 +1,15 @@
+<?php include('../conn/koneksi.php');
+    $id = $_GET['id'];
+    $query = "DELETE FROM produkrem where id ='$id'";
+    $result = mysqli_query($conn, $query);
+
+    if(!$result) {
+        die("Querry Error : ".mysqli_errno($conn)." - ".mysqli_error($conn));
+        echo"<script>document.location.href='data.php'</script>";
+
+    } else {
+        echo "<script>alert('Data berhasil dihapus!);window.location='data.php';</script>";
+        echo"<script>document.location.href='data.php'</script>";
+}
+
+?>
